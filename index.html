@@ -12,19 +12,21 @@
             <link rel="stylesheet" href="./CSS/styles.css">
       </head>
       <body>
-            <header class="conteiner page-nav">
-                  <a href="./index.html" class="logo">Web<span class="studio-first">Studio</span></a>
-                  <nav>   
-                        <ul class="site-nav">
-                              <li class="item"><a href="./index.html" class="current-link">Студия</a></li>
-                              <li class="item"><a href="./portfolio.html">Портфолио</a></li>
-                              <li class="item"><a href="">Контакты</a></li>
+            <header>
+                  <div class="conteiner page-nav">
+                        <a href="./index.html" class="logo">Web<span class="studio-first">Studio</span></a>
+                        <nav class="main-nav">   
+                              <ul class="site-nav">
+                                    <li class="item"><a href="./index.html" class="current-link">Студия</a></li>
+                                    <li class="item"><a href="./portfolio.html">Портфолио</a></li>
+                                    <li class="item"><a href="">Контакты</a></li>
+                              </ul>
+                        </nav>
+                        <ul class="site-contact">
+                              <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                              <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
                         </ul>
-                  </nav>
-                  <ul class="site-contact">
-                        <li class="item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                  </ul>
+                  </div>
             </header>
             <main>
                   <!--Шапка-->
@@ -56,9 +58,8 @@
                               </ul>
                         </div>
                   </section>
-                  
                   <!--Чем мы занимаемся-->
-                  <section class="section">
+                  <section class="section work">
                         <div class="conteiner">
                               <h2 class="title">Чем мы занимаемся</h2>
                               <ul class="work-exemples">
@@ -81,30 +82,38 @@
                               <ul class="foto-command">
                                     <li class="foto">
                                           <img src="./images/img_1.jpg" alt="Игорь Демьяненко" width="270">
-                                          <h3 class="partner">Игорь Демьяненко</h3>
-                                          <p class="profesion">Product Designer</p>
+                                          <div class="foto-description">
+                                                <h3 class="partner">Игорь Демьяненко</h3>
+                                                <p class="profesion">Product Designer</p>
+                                          </div>
                                     </li>
                                     <li class="foto">
                                           <img src="./images/img_2.jpg" alt="Ольга Репина" width="270">
-                                          <h3 class="partner">Ольга Репина</h3>
-                                          <p class="profesion">Frontend Developer</p>
+                                          <div class="foto-description">
+                                                <h3 class="partner">Ольга Репина</h3>
+                                                <p class="profesion">Frontend Developer</p>
+                                          </div>
                                     </li>
                                     <li class="foto">
                                           <img src="./images/img_3.jpg" alt="Николай Тарасов" width="270">
-                                          <h3 class="partner">Николай Тарасов</h3>
-                                          <p class="profesion">Marketing</p>
+                                          <div class="foto-description">
+                                                <h3 class="partner">Николай Тарасов</h3>
+                                                <p class="profesion">Marketing</p>
+                                          </div>
                                     </li>
                                     <li class="foto">
                                           <img src="./images/img_4.jpg" alt="Михаил Ермаков" width="270">
-                                          <h3 class="partner">Михаил Ермаков</h3>
-                                          <p class="profesion">UI Designer</p>
+                                          <div class="foto-description">
+                                                <h3 class="partner">Михаил Ермаков</h3>
+                                                <p class="profesion">UI Designer</p>
+                                          </div>
                                     </li>
                               </ul>
                         </div>
                   </section>    
             </main>
-            <footer>
-                  <div class="conteiner footer-nav">
+            <footer class="footer-nav">
+                  <div class="conteiner">
                         <!--Адрес-->
                         <a href="./index.html" class="logo">Web<span class="studio-second">Studio</span></a>
                         <address class="contact">
@@ -113,7 +122,6 @@
                               <a href="tel:+380961111111">+38 096 111 11 11</a>   
                         </address>
                   </div>
-            </footer>
-            
+            </footer>     
       </body>
 </html>

@@ -10,6 +10,7 @@
   --command-backgraund-color: #f5f4fa;
   --conteiner-background-color: #e5e5e5;
   --border-header-color: #ececec;
+  --border-cards-color:#EEEEEE;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
   background-color: var(--hero-text-color);
   color: var(--primary-text-color);
 }
+
 /*Утилиты*/
 li {
   list-style: none;
@@ -44,6 +46,10 @@ ul {
   padding: 0;
 }
 
+img{
+  display: block;
+}
+
 .conteiner {
   padding-left: 15px;
   padding-right: 15px;
@@ -53,8 +59,8 @@ ul {
 }
 
 .section {
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*Head sita*/
@@ -62,6 +68,8 @@ ul {
 .page-nav {
   display: flex;
   align-items: center;
+
+  border-bottom: 1px solid var(--border-header-color);
 }
 
 /*Logo*/
@@ -82,9 +90,14 @@ ul {
 }
 
 /*Navigation*/
+
+.main-nav{
+  display: block;
+  margin-left: 93px;
+}
+
 .site-nav {
 display: flex;
-margin-left: 93px;  
 }
 
 .site-nav .item {
@@ -150,11 +163,18 @@ margin-right: 0;
 
 .section-hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--hero-background-color);
 }
 
 .hero {
   margin-bottom: 30px;
+  width: 669px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--hero-text-color);
   
@@ -168,7 +188,6 @@ margin-right: 0;
 .order {
   border-radius: 4px;
   padding: 10px 32px;
-  margin-bottom: 200px;
 
   color: var(--hero-text-color);
   background-color: var(--accent-text-color);
@@ -224,8 +243,12 @@ margin-right: 0;
 
 /*Our work*/
 
+.work{
+  padding-top: 0px;
+}
+
 .title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   color: var(--title-text-color);
 
@@ -251,6 +274,7 @@ margin-right: 0;
 /*Our command*/
 
 .command {
+  padding-top: 0px;
   background-color: var(--command-backgraund-color);
 }
 
@@ -270,9 +294,11 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
 border-radius: 0px 0px 4px 4px;
 }
 
-.foto img{
-  margin-bottom: 30px;
+.foto-description{
+padding-top: 30px;
+padding-bottom: 30px;
 }
+
 
 .foto:last-child {
   margin-right: 0;
@@ -288,9 +314,7 @@ border-radius: 0px 0px 4px 4px;
   text-align: center; 
 }
 
-.profesion {
-  margin-bottom: 30px;
-  
+.profesion {  
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -304,9 +328,8 @@ footer {
 }
 
 .footer-nav{
-display: flex;
-flex-direction: column;
 padding-top: 60px;
+padding-bottom: 60px;
 }
 
 .footer-nav .logo{
@@ -343,9 +366,9 @@ margin-bottom: 9px;
 }
 
 /*Portfolio*/
-.filtr-list{
+.filtr-choice {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   margin-bottom: 50px;
 }
 
@@ -361,6 +384,7 @@ margin-bottom: 9px;
 .filtr-all {
   padding: 6px 22px;
   border-radius: 4px;
+  border: var(--accent-text-color);
 
   background-color: var(--accent-text-color);
   color: var(--hero-text-color);
@@ -377,6 +401,7 @@ margin-bottom: 9px;
 .filtr {
   padding: 6px 22px;
   border-radius: 4px;
+  border: var(--filtr-text-color);
 
   background-color: var(--filtr-text-color);
   color: var(--title-text-color);
@@ -396,10 +421,7 @@ margin-bottom: 9px;
 }
 
 .filtr-title {
-  display: block;
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
 
   color: var(--title-text-color);
 
@@ -409,17 +431,14 @@ margin-bottom: 9px;
   letter-spacing: 0.06em;
 }
 
-.filtr-choice{
-display: flex;
-justify-content: center;
-margin-bottom: 50px;
+.filtr-element{
+margin-top: 20px;
+margin-bottom: 20px;
+margin-left: 24px;
+margin-right: 24px;
 }
 
 .filtr-list {
-  display: block;
-  margin-left: 24px;
-  margin-bottom: 20px;
-
   color: var(--primary-text-color);
 
   font-size: 16px;
@@ -437,12 +456,19 @@ flex-wrap: wrap;
 }
 
 .part-item{
-margin-right: 30px;
 display: block;
+width: 370px;
+margin-right: 30px;
 margin-bottom: 30px;
 font-size: 0;
+
+border: 1px solid var(--border-cards-color);
 }
 
 .part-item:nth-child(3n){
 margin-right: 0;
+}
+
+.part-item:nth-child(n+7){
+margin-bottom: 0;
 }
